@@ -1,4 +1,4 @@
-
+import socialLogo from '../../assets/icons/social.png'
 const Footer = () => {
     return (
         <footer className="bg-zinc-900 text-white py-[60px]">
@@ -6,7 +6,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-5">
                     <h2 className="text-white text-[32px] font-extrabold font-['Manrope']">CareerHub</h2>
                     <p className="text-white text-opacity-70 text-base font-normal font-['Manrope']">There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
-                    <img className='h-[42px] w-[156px] cursor-pointer' src alt="" />
+                    <img className='h-[42px] w-[156px] cursor-pointer' src={socialLogo} alt="" />
                 </div>
                 <ul className="flex flex-col gap-3 text-white text-opacity-70 text-base font-normal font-['Manrope']">
                     <h3 className="text-white text-xl font-semibold font-['Manrope']">Company</h3>

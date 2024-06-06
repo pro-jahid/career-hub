@@ -6,12 +6,14 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Home/Home';
+
 import App from './App';
-import Details from './component/Header/Job_details/Details';
 import Static from './component/Header/Static/Static';
 import Applied from './component/Header/Applied/Applied';
 import Hero from './component/Hero/Hero';
+import Home from './component/Home/Home';
+import JobDetails from './component/JobDetails/JobDetails';
+
 
 
 const router = createBrowserRouter([
@@ -30,7 +32,7 @@ const router = createBrowserRouter([
       
       {
         path:'job/:job_details',
-        element:<Details></Details>,
+        element:<JobDetails></JobDetails>,
         loader:()=> fetch('/jobs.json')
       },
       {
